@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Capstone</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>  
+  </head>
+
+  <body>
+    <h1>Contact us today</h1>
+    <div id="container">
+      <div class="image-container">
+        <img src="value.png" alt="value" class="value">
+      </div>
+      <form id="donation">
+        <h3>Choose your type of donate</h3>
+        <label for="selectOption">Type of Donation</label><br>
+        <select name="selectOption" id="selectOption" onchange="toggleHiddenContent()">
+          <option value="money">Money</option>
+          <option value="cloth">Clothing</option>
+        </select>    
+      </form>
+        
+
+        <!-- Hidden content for each option -->
+        <div id="moneyContent" class="hidden-content">
+          <h3>One time donation</h3>
+          <div id="credit-card-form">
+            <h1>Enter Credit Card Information</h1>
+            <form id="creditCardForm">
+              <label for="cardNumber">Card Number:</label>
+              <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456">
+              <span class="error-message" id="cardNumberError"></span>
+              
+              <label for="cardName">Cardholder's Name:</label>
+              <input type="text" id="cardName" name="cardName" placeholder="John Doe">
+              <span class="error-message" id="cardNameError"></span>
+              
+              <label for="expiryDate">Expiry Date:</label>
+              <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
+              <span class="error-message" id="expiryDateError"></span>
+              
+              <label for="cvv">CVV:</label>
+              <input type="text" id="cvv" name="cvv" placeholder="123">
+              <span class="error-message" id="cvvError"></span>
+
+              <label for="amount">Enter the amount:</label>
+              <input type="text" id="amount" name="amount" placeholder="$100">
+              <span class="error-message" id="amountError"></span>
+              
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+        <div id="clothContent" class="hidden-content">
+          <h3>Clothing donation</h3>
+          <p>Please fill out the form below, we will send you the intruction 
+            how to pack your clothing and send them to us through your email.</p>
+            <h4>Information Form</h4>
+            <form action="" method="post" onsubmit="return validateForm()">
+                <label for="firstName">First Name:</label><br>
+                <input type="text" id="firstName" name="firstName"><br>
+                
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" id="lastName" name="lastName"><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+  
+      <div id="info">
+        <h2>Please do not hesitale to reach out to us and learn more.</h2>
+        <h3>Our Location: 1023, 15th Street NW Washington, DC 20005</h3>
+        <h3>Phone number: 202-293-0351</h3>
+        <h3>Email Address: contactus@suitedforchange.org</h3>
+      </div>
+  </body>

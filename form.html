@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CAT Capstone</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>  
+  </head>
+
+  <body>
+    <div id="form">
+      <h1>Sharing Your Love</h1>
+      <img src="form.png" alt="Logo" class="logo">
+        <form id="contact">
+          <h2>Helping each other by sharing what you have</h2>
+          <h2>Be a Suited For Change volunteer today by filling out the form below.</h2>
+          <label for="firstName">First Name:</label><br>
+          <input type="text" id="firstName" name="firstName"><br>
+          
+          <label for="lastName">Last Name:</label><br>
+          <input type="text" id="lastName" name="lastName"><br>
+          
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email"><br>
+          
+          <label for="phone">Phone:</label><br>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><br>
+          
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+          
+          <input type="submit" value="Send">   
+        </form>
+    </div>
+  </body>
+
