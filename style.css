@@ -1,546 +1,419 @@
-/* style for the form */
-/* Default styles for form */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
+/* Resetting default margin and padding */
+* {
   margin: 0;
   padding: 0;
-  color: #333
+  box-sizing: border-box;
 }
 
-#form {
-  width: 80%;
-  margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
+/* Basic styles for body and HTML */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.nav-links ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 3rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+
+
+/* Main content container */
+.section {
+padding: 2rem 0;
+text-align: center;
+}
+
+.container {
+max-width: 800px;
+margin: 0 auto;
+background-color: #fff;
+padding: 2rem;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container img {
+max-width: 100%;
+height: auto;
+margin-bottom: 1rem;
+}
+
+#about h2 {
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+#ourServices {
+list-style-type: none;
+padding: 0;
+}
+
+.service {
+font-size: 1.5rem;
+font-weight: bold;
+margin-top: 1.5rem;
+}
+
+.service + p {
+margin-top: 0.5rem;
+margin-bottom: 1rem;
+}
+
+/* Donate section */
+#Donate-one {
+  background-color: #f2f2f2;
+  padding: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#Donate-one a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#Donate-one a:hover {
+  background-color: #555;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.header {
+  font-size: 1.5rem;
+}
+
+.nav-links ul {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav-links li {
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  padding: 1rem;
+}
+
+#about h2 {
+  font-size: 1.5rem;
+}
+
+.service {
+  font-size: 1.2rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+#Donate-one {
+  padding: 1rem;
+}
+}
+
+/* About page*/
+/* Main content container */
+/* Main styles */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+#formTitle {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#aboutImg {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+.text {
+  margin-top: 1.5rem;
+}
+
+.text p {
+  margin-bottom: 1rem;
+}
+
+
+#Donate-one a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#Donate-one a:hover {
+  background-color: #744a4a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links li {
+    margin-bottom: 0.5rem;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content img {
+    margin-bottom: 1rem;
+  }
+
+  #Donate-one {
+    padding: 1rem;
+  }
+}
+
+/* Form html */
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
-  color: #333;
+}
+
+#formTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.formImg {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Form styles */
+#form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form {
-  max-width: 600px;
-  margin: 0 auto;
+  text-align: left;
+}
+
+form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 label {
-  margin-top: 10px;
   display: block;
   font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-top: 5px;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
 }
 
 input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-textarea {
-  resize: vertical;
-}
-
-/* Media Query for smaller screens */
-@media (max-width: 600px) {
-  #form {
-    width: 95%;
-  }
-
-  form {
-    padding: 10px;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  textarea {
-    width: 100%;
-  }
-}
-
-
-/* style.css 
-.hidden-content {
-  display: none;
-}
-*/
-
-/* css for contact.html */
-/* General styles for the body and form container */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  color:#333
-}
-
-#donation {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-/* Styles for the form and labels */
-form {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  margin-top: 20px;
-  font-weight: bold;
-}
-
-/* Dropdown styling */
-#selectOption {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-/* Button styling */
-button, input[type="submit"] {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-button:hover, input[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-/* Hidden content styling */
-.hidden-content {
-  display: none;
-  margin-top: 20px;
-  padding: 20px;
-  border-top: 1px solid #eee;
-}
-
-/* Active content section */
-.active-content {
-  display: block;
-}
-
-/* Common input field styling */
-.field input[type="text"],
-.field input[type="email"],
-.field input[type="number"],
-.field input[type="date"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-top: 5px;
-  font-size: 16px;
-}
-
-/* Specific styling for the credit card form */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  margin: 0;
-  padding: 20px;
-  color: #333
-}
-
-#credit-card-form {
-  max-width: 600px;
-  margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-input[type="text"] {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-.error-message {
-  color: #f44336;
-  margin-top: 5px;
-}
-
-/* Style for the info container */
-#info {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  margin: 30px auto;
-  max-width: 600px;
-  text-align: center;
-}
-
-/* Styling for headings */
-#info h2, #info h3 {
-  margin-bottom: 10px;
-}
-
-#info h2 {
-  font-size: 24px;
-  color: #333;
-}
-
-#info h3 {
-  font-size: 18px;
-  color: #666;
-}
-
-#info h4 {
-  font-size: 18px;
-  color: #666;
-}
-
-/* Styling for the location, phone number, and email */
-#info p {
-  font-size: 14px;
-  color: #999;
-  margin-bottom: 15px;
-}
-
-/* Optional: Add a hover effect to the links if applicable */
-#info a:hover {
-  color: #007bff;
-  text-decoration: underline;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-/* home page */
-/* Reset default margin and padding */
-body, h1, h2, h3, p, ul, li {
-  margin: 0;
-  padding: 0;
-}
-
-/* Basic styles */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f0f0f0;
-
-}
-
-header {
   background-color: #333;
   color: #fff;
-  padding: 10px 0;
-  text-align: center;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-header nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-header nav ul li {
-  display: inline;
-}
-
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  display: inline-block;
-}
-
-header nav ul li a:hover {
+input[type="submit"]:hover {
   background-color: #555;
 }
 
-header h1 {
-  font-size: 40px;
-  margin-top: 10px;
-  color: #fff;
-}
-
-.home {
-  width: 1000px; /* Adjust as per your logo size */
-  height: auto;
-  margin-top: 10px;
-}
-
-/* about.html */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  padding: 20px;
-  background-color: white;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
-
-#header {
-  background-color: #e21c21;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-h2 {
-  margin-left: 20px;
-}
-
-.content {
-  display: flex;
-  gap: 20px;
-  margin-left: 20px;
-}
-
-.content img, .content .text {
-  width: 601px;
-  height: 461px;
-}
-
-.content .text {
-  padding: 10px;
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  overflow-y: auto;
-}
-
+/* Footer styles */
 footer {
-  background-color: #e21c21;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  margin-top: 20px;
-}
-
-footer a.donate-button {
-  background-color: black;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-footer a.donate-button:hover {
   background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-#Donate-one {
-  body {
-      font: 20px "Helvetica";
-    }
-    
-    a {  
-      display: inline-block;
-      margin: 20px;
-      position: relative;
-      text-decoration: none;
-    }
-    
-    .donate {
-      background: #00684d;
-      background: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,0.4) 100%),
-                  -webkit-linear-gradient(left, lighten(#00684d, 15%) 0%, #00684d 50%, lighten(#00684d, 15%) 100%);
-      background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 100%),
-                  linear-gradient(to right, lighten(#00684d, 15%) 0%, #00684d 50%, lighten(#00684d, 15%) 100%);
-      background-position: 0 0;
-      background-size: 200% 100%;
-      border-radius: 4px;
-      color: #fff;
-      padding: 15px 65px 15px 15px;
-      text-shadow: 1px 1px 5px #666;
-      -webkit-transition: all 800ms;
-      transition: all 800ms;
-      
-      &:after {
-        border-left: 1px solid darken(#00684d, 5%);
-        color: darken(#00684d, 10%);
-        content: "\f004";
-        padding: 10px 0;
-        padding-left: 15px;
-        position: absolute;
-        right: 16px;
-        top: 7px;    
-        -webkit-transition: all 600ms 200ms;
-        transition: all 600ms 200ms;
-      }
-      
-  
-#changethis.dark-mode {
-background-color: red;
-color: whitesmoke;
-a {
-  color: red;
-}
-button {
-  background-color: red;
-  color: red;
-}
+
+/* contact html */
+/* Main content */
+
+/* Main container styles */
+#containerContact {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-#changethis.light-mode {
-background-color: whitesmoke;
-color: red;
-a {
-  color: red;
-}
-button {
-  background-color: red;
-  color: whitesmoke;
-}
-}
-      &:hover {
-        background-position: -100% 0;
-        
-        &:after {
-          border-left: 1px solid lighten(#00684d, 5%);
-          color: #fff;
-          text-shadow: 0 0 10px #000;
-        }
-      }
-    }
-}
-
-/* Default light theme */
-body {
-  background-color: #ffffff;
-  color: #333333;
-}
-
-.dark-theme {
-  background-color: #333333;
-  color: #ffffff;
-}
-
-.container {
-  display: flex; /* Enables Flexbox */
-  justify-content: space-between; /* Adds space between the image and form */
-  align-items: start; /* Aligns items to the top */
-  padding: 20px; /* Adds some padding around the container */
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#formTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .value {
-  min-width: 300px; /* Example minimum width */
-  min-height: 200px; /* Example minimum height */
-  width: 100%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Donation form styles */
+#donation {
+  margin-bottom: 2rem;
+}
+
+#typeDonation {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#selectOption {
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Hidden content styles */
+.hidden-content {
+  display: none;
+}
+
+/* Info section styles */
+#info {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contactInfo {
+  margin-bottom: 1rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  margin: 0;
 }
 
 
-#donation {
-  width: 40%; /* Sets the form width to take up less space */
-  display: flex; /* Makes the form elements stack vertically */
-  flex-direction: column; /* Stacks the form elements vertically */
-  gap: 10px; /* Adds some space between form elements */
+  
+
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 

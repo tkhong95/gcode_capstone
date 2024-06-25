@@ -5,36 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Capstone</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <!--link rel="icon" href="./favicon.ico" type="image/x-icon"-->
 </head>
 <body id="changethis" class="dark-mode">
   <header>
-    <h1 id="header">Suited for Change</h1>
-    <ul>
-      <li><a href="default.asp">Home</a></li>
-      <li><a href="Index.html">About</a></li>
-      <li><a href="about.asp">Contact</a></li>
-    </ul>
-    <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">👔</button>
+    <nav>
+      <div class="nav-links">
+        <ul role='navigation'>
+          <li>
+            <a href='home.html'>Home</a>
+          </li>
+          <li>
+            <a href='about.html'>About</a>
+          </li>
+          <li>
+            <a href='form.html'>Help today </a>
+          </li>
+          <li>
+            <a href='contact.html'>Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <!--div class="nav-actions">
+        <button id="theme-toggle">dark_light Theme</button>
+      </div-->
+    </nav>
+    <h1 class="header">Suited for Change</h1>
+    <!--button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">👔</button-->
   </header>
 
   <main>
-    <h2>About</h2>
-    <div class="content">
-      <img src="change.jpg" alt="About Image">
-      <div class="text">
-        <h3>About Suited for Change</h3>
+    <h1 id="formTitle">About Us</h1>
+    <img src="about-us.png" alt="aboutImg" id="aboutImg">
+    
+    <div class="text">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Suited for Change empowers women in need by providing free professional attire, 
+          coaching, and skills training to help them secure employment and build lasting careers. 
+          Each client begins with a personalized styling session, receiving two full outfits 
+          and accessories to boost their confidence. This is followed by a virtual or in-person 
+          coaching session to reinforce their qualifications and prepare them for interviews. 
+          Once employed, clients return for three more outfits to expand their professional wardrobe.
         </p>
-      </div>
+        <p>
+          Our virtual suiting experience, introduced during social distancing, offers additional 
+          clothing and personal touches to lift spirits. Clients can further enhance their job 
+          readiness through online workshops on various professional skills, provided by our partners at Edge. 
+          All services are available at no cost through referrals from partner agencies, 
+          ensuring comprehensive support and empowerment for our clients.
+        </p>
+        <p>
+          Founded in 1992, we have helped over 30000 women dress for success and navigate their career paths.
+        </p>
     </div>
   </main>
 
-  <footer id="Donate-one">
+  <div id="Donate-one">
     <a href='contact.html'>DONATE HERE</a>
-  </footer>
+  <div>
+
+  <footer>
+      <p>&copy; 2024 Suited for Change. All rights reserved.</p>
+  </footer>  
 
   <script src="script.js"></script>
 </body>

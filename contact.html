@@ -4,26 +4,49 @@
   <head>
     <meta charset='UTF-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Capstone</title>
+    <title>CAT Capstone</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>  
   </head>
 
   <body>
-    <h1>Contact us today</h1>
-    <div id="container">
-      <div class="image-container">
-        <img src="value.png" alt="value" class="value">
-      </div>
-      <form id="donation">
-        <h3>Choose your type of donate</h3>
-        <label for="selectOption">Type of Donation</label><br>
-        <select name="selectOption" id="selectOption" onchange="toggleHiddenContent()">
-          <option value="money">Money</option>
-          <option value="cloth">Clothing</option>
-        </select>    
-      </form>
-        
+    <header>
+      <nav>
+        <div class="nav-links">
+          <ul role='navigation'>
+            <li>
+              <a href='home.html'>Home</a>
+            </li>
+            <li>
+              <a href='about.html'>About</a>
+            </li>
+            <li>
+              <a href='form.html'>Help today </a>
+            </li>
+            <li>
+              <a href='contact.html'>Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <!--div class="nav-actions">
+          <button id="theme-toggle">dark_light Theme</button>
+        </div-->
+      </nav>
+      <h1 class="header">Suited for Change</h1>
+    </header>
+    <main>
+      <div id="containerContact">
+        <h1 id="formTitle">Contact us today</h1>
+        <img src="contact.png" alt="value" class="value">
+        <h2 id="typeDonation">Choose your type of donate</h2>
+        <form id="donation">
+          <label for="selectOption">Type of Donation</label><br>
+          <select name="selectOption" id="selectOption" onchange="toggleHiddenContent()">
+            <option value="money">Money</option>
+            <option value="cloth">Clothing</option>
+          </select>    
+        </form>
+      </div>    
 
         <!-- Hidden content for each option -->
         <div id="moneyContent" class="hidden-content">
@@ -76,9 +99,14 @@
     </div>
   
       <div id="info">
-        <h2>Please do not hesitale to reach out to us and learn more.</h2>
-        <h3>Our Location: 1023, 15th Street NW Washington, DC 20005</h3>
-        <h3>Phone number: 202-293-0351</h3>
-        <h3>Email Address: contactus@suitedforchange.org</h3>
+        <h2 class="contactInfo">Please do not hesitale to reach out to us and learn more.</h2>
+        <h3 class="contactInfo">Our Location: 1023, 15th Street NW Washington, DC 20005</h3>
+        <h3 class="contactInfo">Phone number: 202-293-0351</h3>
+        <h3 calss="contactInfo">Email Address: contactus@suitedforchange.org</h3>
       </div>
+    </main>  
   </body>
+
+  <footer>
+    <p>&copy; 2024 Suited for Change. All rights reserved.</p>
+</footer> 
